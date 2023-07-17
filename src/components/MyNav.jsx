@@ -20,6 +20,7 @@ function MyNav() {
                     <Nav className="me-auto">
                         <Link className="navbar-brand" to="/">Home</Link>
                         <Link className="navbar-brand" to="/pokemon">Pokémon</Link>
+                        <Link className="navbar-brand" to="/cart">Cart</Link>
                     </Nav>
                 </Container>
             </Navbar>
