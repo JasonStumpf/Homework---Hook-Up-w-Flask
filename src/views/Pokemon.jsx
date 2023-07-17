@@ -51,9 +51,12 @@ const Pokemon = () => {
                             </Card.Body>
                             <ListGroup className="list-group-flush">
                                 <ListGroup.Item>Price: ${p.hp}</ListGroup.Item>
-                                <Button variant="warning">
-                                    <Link to={`/pokemon/${p.id}`}>View</Link>
-                                </Button>
+
+                                <Link to={{
+                                    pathname: `/pokemon/${p.id}`,
+                                    state: { pokemon: p }
+                                }}>View</Link>
+
                             </ListGroup>
                             <Button variant="success" onClick={() => addPokemon(p)}>Add to Cart</Button>{' '}
                             <br />
