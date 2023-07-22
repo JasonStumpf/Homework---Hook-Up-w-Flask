@@ -9,7 +9,7 @@ import Details from "./Details";
 const Pokemon = () => {
 
     const getPokemonData = async () => {
-        let response = await axios.get('http://127.0.0.1:5000/pokemondata');
+        let response = await axios.get('https://pokemon-app-46jm.onrender.com/pokemondata');
         return response.status === 200 ? response.data : null
     }
 
